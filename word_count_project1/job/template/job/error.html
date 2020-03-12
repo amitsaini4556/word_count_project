@@ -1,0 +1,15 @@
+  <center>  <a href="{% url 'frequency' %}">Homepage</a>
+
+
+    <p><b>Current Data already exist in database.</b></p>
+    <p><b>_______________________________________</b></p>
+{% for data in job %}
+<p><b>Url Like This ::</b>{{ data.body }}</p>
+
+<br>
+<p><b>Total Words ::</b> {{ data.counts }}</p>
+<br>
+<p><b>Words With Repetitions:: </b>{{ data.topwords }}</p>
+<br>
+{% endfor %}
+</center>

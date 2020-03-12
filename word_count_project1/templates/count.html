@@ -1,0 +1,13 @@
+<h1>Total words in texts book {{count}}</h1>
+  <a href="{% url 'home' %}">start again</a>
+  
+<h2>and my text like this</h2>
+{{fulltext}}
+
+<h2>word count</h2>
+<br>
+{%  for word,counttotal in worddictionary %}
+
+{{ word }}-{{ counttotal }}
+<br>
+{% endfor%}
